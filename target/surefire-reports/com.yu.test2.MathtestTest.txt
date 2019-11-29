@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.yu.test2.MathtestTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.027 sec <<< FAILURE!
+testCount1(com.yu.test2.MathtestTest)  Time elapsed: 0.009 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: org/apache/commons/math3/stat/descriptive/moment/Mean
+	at com.yu.test2.Mathtest.count1(Mathtest.java:23)
+	at com.yu.test2.MathtestTest.testCount1(MathtestTest.java:29)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.math3.stat.descriptive.moment.Mean
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 more
+
+testCount2(com.yu.test2.MathtestTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: org/apache/commons/math3/stat/descriptive/moment/Mean
+	at com.yu.test2.Mathtest.count1(Mathtest.java:23)
+	at com.yu.test2.Mathtest.count2(Mathtest.java:45)
+	at com.yu.test2.MathtestTest.testCount2(MathtestTest.java:36)
+
+test2Count2(com.yu.test2.MathtestTest)  Time elapsed: 0.002 sec  <<< ERROR!
+java.lang.NoClassDefFoundError: org/apache/commons/math3/stat/descriptive/moment/GeometricMean
+	at com.yu.test2.Mathtest.count2(Mathtest.java:46)
+	at com.yu.test2.MathtestTest.test2Count2(MathtestTest.java:44)
+Caused by: java.lang.ClassNotFoundException: org.apache.commons.math3.stat.descriptive.moment.GeometricMean
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 30 more
+
